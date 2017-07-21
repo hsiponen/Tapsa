@@ -11,10 +11,10 @@ Requirements:
 * Microsoft Skype for Business or Lync 2010/2013
 * ActiveDirectory PowerShell module (only for permission check (check-permissions) and example functions (Tapsa-module))
 
-Recommended use: run from PowerShell ISE
+Recommended use: run from PowerShell ISE  
 The bot will run as long as the PowerShell session is running
 
-Microsoft Lync Model API documentation
+Microsoft Lync Model API documentation  
 https://msdn.microsoft.com/library/office/hh243705(v=office.14).aspx
 
 This is a software robot for automating Windows Server administration tasks. That's how I've been using it for two years. 
