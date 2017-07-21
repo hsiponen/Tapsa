@@ -13,8 +13,7 @@ Of course it can do much more. If you can do it with PowerShell, you can do it f
 check todays lunch menu and the menu of nearby restaurants.
 It's surprisingly fun and convenient to run powershell tasks from a Lync-client (which I'm using all the time anyway).
 
-This bot comes with an example module that has a few functions. The bot we use in production has more than 50 functions and about 
-half of them are actual server/cloud administration tasks that our IT-support uses daily. They rarely need admin privileges anymore 
+This bot comes with an example module that has a few functions. The bot we use in production has more than 60 functions and more than half of them are actual server/cloud administration tasks that our IT-support uses daily. They rarely need admin privileges anymore 
 since Tapsa can do all that work. Saves us at least two full work days on average per month. Propably more since it doesn't make any mistakes.
 
 ## Requirements
