@@ -6,10 +6,10 @@ Tapsa is a Skype for Business / Lync -chatbot capable of running powershell func
 ![gif](/gif/lunch.gif)
 
 Requirements:
-PowerShell 3.0 or later
-Lync SDK (Lync .NET assemblies), follow this guide (the LyncSDK.exe installation part): https://blogs.technet.microsoft.com/heyscriptingguy/2016/08/19/use-powershell-to-integrate-with-the-lync-2013-sdk-for-skype-for-business-part-1/
-Microsoft Skype for Business or Lync 2010/2013
-ActiveDirectory PowerShell module (only for permission check (check-permissions) and example functions (Tapsa-module))
+* PowerShell 3.0 or later
+* Lync SDK (Lync .NET assemblies), follow this guide (the LyncSDK.exe installation part): https://blogs.technet.microsoft.com/heyscriptingguy/2016/08/19/use-powershell-to-integrate-with-the-lync-2013-sdk-for-skype-for-business-part-1/
+* Microsoft Skype for Business or Lync 2010/2013
+* ActiveDirectory PowerShell module (only for permission check (check-permissions) and example functions (Tapsa-module))
 
 Recommended use: run from PowerShell ISE
 The bot will run as long as the PowerShell session is running
