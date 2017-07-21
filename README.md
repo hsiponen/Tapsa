@@ -24,9 +24,9 @@ The bot will run as long as the PowerShell session is running.
 8. Run the script
 9. Try sendin a message "hi" to the bot from another Lync account
 10. You should get a reply
-11. Next
-  1. Make sure you understand what the script does and where you need to add your own commands.
-  2. You need to create your own functions. Tapsa-tasks.psm1 is just provided as an example.
+11. Next:
+  * Make sure you understand what the script does and where you need to add your own commands.
+  * You need to create your own functions. Tapsa-tasks.psm1 is just provided as an example.
 
 
 
