@@ -3,7 +3,7 @@ Henri Siponen 2017
 
 Tapsa is a Skype for Business / Lync -chatbot capable of running powershell functions
 
-![gif](\gif\lunch.gif)
+![gif](/gif/lunch.gif)
 
 Requirements:
 PowerShell 3.0 or later
@@ -27,5 +27,5 @@ half of them are actual server/cloud administration tasks that our IT-support us
 since Tapsa can do all that work. Saves us at least two full work days on average per month. Propaly more since it doesn't make any mistakes.
 
 
-![gif](\gif\lunch.gif)
-![gif](\gif\teppo.gif)
+![gif](/gif/lunch.gif)
+![gif](/gif/teppo.gif)
