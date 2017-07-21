@@ -27,5 +27,4 @@ half of them are actual server/cloud administration tasks that our IT-support us
 since Tapsa can do all that work. Saves us at least two full work days on average per month. Propaly more since it doesn't make any mistakes.
 
 
-![gif](/gif/lunch.gif)
 ![gif](/gif/teppo.gif)
