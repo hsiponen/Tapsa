@@ -259,7 +259,7 @@ function Get-License {
     Finally 
     {
         # Close Office 365 session
-        Get-PSSession | Remove-PSSession
+        Remove-PSSession $O365Session
     }
     return $result
 }
