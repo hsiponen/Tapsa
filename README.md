@@ -33,7 +33,7 @@ The bot will run as long as the PowerShell session is running.
 4. Modify filepaths and credentials and save the script
 7. Start Skype for Business or Lync but don't sign in if you want to use the credentials in the script
 8. Run the script 
-9. If you get an error about unsigned script, save the script using 'save as...' and make sure the execution policy is remotesigned or set the execution policy to unrestricted
+9. If you get an error about unsigned script, save the scripts using 'save as...' and make sure the execution policy is remotesigned or set the execution policy to unrestricted
 10. Try sendin a message "hi" to the bot from another Lync account
 11. You should get a reply
 12. Next:
