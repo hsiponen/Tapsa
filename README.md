@@ -21,7 +21,7 @@ since Tapsa can do all that work. Saves us at least two full work days on averag
 * PowerShell 3.0 or later
 * Lync SDK (Lync .NET assemblies), follow this guide (the LyncSDK.exe installation part): https://blogs.technet.microsoft.com/heyscriptingguy/2016/08/19/use-powershell-to-integrate-with-the-lync-2013-sdk-for-skype-for-business-part-1/
 * Microsoft Skype for Business or Lync 2010/2013
-* ActiveDirectory PowerShell module (only for permission check (check-permissions) and example functions (Tapsa-module))
+* ActiveDirectory PowerShell module (only for permission check (check-permissions) and example functions (Tapsa-tasks module))
 
 Recommended use: run from PowerShell ISE  
 The bot will run as long as the PowerShell session is running.
@@ -31,11 +31,12 @@ The bot will run as long as the PowerShell session is running.
 2. Clone the repository or download the Tapsa.ps1 and Tapsa-tasks.psm1 (or use your own powershell modules)
 3. Open the Tapsa.ps1 script in Windows PowerShell ISE
 4. Modify filepaths and credentials and save the script
-7. Start Skype for Business or Lync
-8. Run the script
-9. Try sendin a message "hi" to the bot from another Lync account
-10. You should get a reply
-11. Next:
+7. Start Skype for Business or Lync but don't sign in if you want to use the credentials in the script
+8. Run the script 
+9. If you get an error about unsigned script, save the script using 'save as...' and make sure the execution policy is remotesigned or set the execution policy to unrestricted
+10. Try sendin a message "hi" to the bot from another Lync account
+11. You should get a reply
+12. Next:
   * Make sure you understand what the script does and where you need to add your own commands.
   * You need to create your own functions. Tapsa-tasks.psm1 is just provided as an example.
 

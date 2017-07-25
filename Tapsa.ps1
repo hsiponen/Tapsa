@@ -28,8 +28,8 @@
 # https://msdn.microsoft.com/library/office/hh243705(v=office.14).aspx
 
 
-$ModelPath    = "C:\Microsoft.Lync.Model.dll"    # Location of Lync Model .NET assembly
-$ControlsPath = "C:\Microsoft.Lync.Controls.dll" # Location of Lync Controls .NET assembly
+$ModelPath    = "C:\Program Files (x86)\Microsoft Office 2013\LyncSDK\Assemblies\Desktop\Microsoft.Lync.Model.dll"    # Location of Lync Model .NET assembly
+$ControlsPath = "C:\Program Files (x86)\Microsoft Office 2013\LyncSDK\Assemblies\Desktop\Microsoft.Lync.Controls.dll" # Location of Lync Controls .NET assembly
 $TapsaModule  = "C:\Tapsa-tasks.psm1"            # module for bot tasks, add your own.
 $logfile      = "C:\botlog.txt"                  # Location of log file
 
