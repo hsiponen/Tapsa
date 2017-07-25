@@ -1,5 +1,4 @@
 # Tapsa - bot for Lync/SfB (PowerShell script)
-Henri Siponen 2017
 
 Tapsa is a Skype for Business / Lync -chatbot capable of running powershell functions. The bot is just a powershell script. Not an executable application.
 
