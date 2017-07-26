@@ -22,12 +22,12 @@ since Tapsa can do all that work. Saves us at least two full work days on averag
 * Microsoft Skype for Business or Lync 2010/2013
 * ActiveDirectory PowerShell module (only for permission check (check-permissions) and example functions (Tapsa-tasks module))
 
-Recommended use: run from PowerShell ISE  
+Recommended use: run from PowerShell ISE
 The bot will run as long as the PowerShell session is running.
 
 ## How to use
 1. Make sure you meet the requirements above
-2. Clone the repository or download the Tapsa.ps1 and Tapsa-tasks.psm1 (or use your own powershell modules)
+2. Clone the repository or download the Tapsa.ps1 and Tapsa-tasks.psm1
 3. Open the Tapsa.ps1 script in Windows PowerShell ISE
 4. Modify filepaths and credentials and save the script
 7. Start Skype for Business or Lync but don't sign in if you want to use the credentials in the script
