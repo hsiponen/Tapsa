@@ -20,7 +20,7 @@ since Tapsa can do all that work. Saves us at least two full work days on averag
 * PowerShell 3.0 or later
 * Lync SDK (Lync .NET assemblies), follow this guide (the LyncSDK.exe installation part): https://blogs.technet.microsoft.com/heyscriptingguy/2016/08/19/use-powershell-to-integrate-with-the-lync-2013-sdk-for-skype-for-business-part-1/
 * Microsoft Skype for Business or Lync 2010/2013
-* ActiveDirectory PowerShell module (only for permission check (check-permissions) and example functions (Tapsa-tasks module))
+* [ActiveDirectory PowerShell module](https://www.microsoft.com/en-us/download/details.aspx?id=45520) (only for permission check (check-permissions) and example functions (Tapsa-tasks module))
 
 Recommended use: run from PowerShell ISE
 The bot will run as long as the PowerShell session is running.
