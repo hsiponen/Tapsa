@@ -28,8 +28,10 @@
 
 $ModelPath    = "C:\Program Files (x86)\Microsoft Office 2013\LyncSDK\Assemblies\Desktop\Microsoft.Lync.Model.dll"    # Location of Lync Model .NET assembly
 $ControlsPath = "C:\Program Files (x86)\Microsoft Office 2013\LyncSDK\Assemblies\Desktop\Microsoft.Lync.Controls.dll" # Location of Lync Controls .NET assembly
-$TapsaModule  = "C:\Tapsa-tasks.psm1"            # module for bot tasks, add your own.
-$logfile      = "C:\botlog.txt"                  # Location of log file
+$TapsaModule  = "C:\Tapsa-tasks.psm1"     # module for bot tasks, add your own.
+$logfile      = "C:\botlog.txt"           # Location of log file
+$AIModule     = "C:\Tapsa-AI-module.psm1" # AI module
+$datapath     = "C:\Tapsa-master"         # Folder for AI training data. data.txt will be used/created in this location
 
 $botUser = "username@domain.com" # Lync username
 $botPwd  = "password"            # Lync password
@@ -43,7 +45,9 @@ Try
     Import-Module $ModelPath
     Import-Module $ControlsPath
     Remove-Module Tapsa-tasks -ErrorAction Ignore # This removes the task module from previous run just in case it was modified
+    Remove-Module Tapsa-AI-module -ErrorAction Ignore
     Import-Module $TapsaModule
+    Import-Module $AIModule
 }
 Catch
 {
@@ -73,7 +77,7 @@ function check-permissions ([string]$upn,[string]$group) {
 
 }
 
-function run-command($msgStr)
+function run-command($msgStr,$sender)
 {
     try 
     {
@@ -87,7 +91,7 @@ function run-command($msgStr)
             {$msgStr.Contains("o365 license")} {                                                                                                  # example: o365 license user@domain.com 
                 if ($msgStr.Contains("set")) { $result = Get-License -upn $msgStr -assing $true }
                 else                         { $result = Get-License -upn $msgStr }}
-            default { $result = ""}
+            default { $result = Invoke-AI -datapath $datapath -message $msgStr -sender $sender}
         }
 
         # Lync only accepts string-type messages
@@ -190,7 +194,7 @@ $global:action = {
         # Run a command based on the message. Allowed only for a certain AD-group
         if (check-permissions -upn $sender -group $permittedGroup) 
         {
-            $response = run-command -msgStr $msgStr
+            $response = run-command -msgStr $msgStr -sender $sender
         }
         else 
         {

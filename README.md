@@ -15,6 +15,8 @@ It's surprisingly fun and convenient to run powershell tasks from a Lync-client 
 This bot comes with an example module that has a few functions. The bot we use in production has more than 60 functions and more than half of them are actual server/cloud administration tasks that our IT-support uses daily. They rarely need admin privileges anymore 
 since Tapsa can do all that work. Saves us at least two full work days on average per month. Probably more since it doesn't make any mistakes. I will try to keep adding some of those functions to Tapsa-tasks.psm1 in the future.
 
+Update 11.8.2017: AI module added. You can now train the bot to answer questions. Training data can also be added to data.txt in this format: question;answer;1. One question & solution pair per line. See the module for more instructions.
+
 ## Requirements
 * Windows 7 or later
 * PowerShell 3.0 or later
